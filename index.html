@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <title>Collage Web App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js" integrity="sha512-dQIiHSl2hr3NWKKLycPndtpbh5iaHLo6MwrXm7F0FM5e+kL2U16oE9uIwPHUl6fQBeCthiEuV/rzP3MiAB8Vfw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+<body style="background: linear-gradient(225deg, #ee7724, #d8363a, #dd3675, #b44593);">
+    <div class="container">
+        <center>
+            <a href="" id="link" download="Rudransh.png"></a>
+            <h4 style="color:rgb(2, 37, 162);">Please press allow as soon as popup comes. After you give a voice command</h4>
+            <h1>Collage Web App
+                <img src="camera.jpg" id="logo_img">
+            </h1>
+            <hr>
+
+            <div class="form-group">
+                <h3>Say any thing but it should contain "take my selfie" phrase to take a selfie.</h3>
+                <p>Press the Start button ot start saying</p>
+            <button onclick="start()" class="btn btn-warning">Start</button>
+            <br>
+                <label>Your voice output : </label>
+                <textarea class="form-control" id="textbox" readonly="true"></textarea>
+
+            </div>
+            
+            <label>Your webcam : </label>
+            <div id="camera">
+
+            </div>
+            <br>
+
+            <label>Your selife Will Display Here: </label>
+            <div id="result">
+
+            </div>
+            <br>
+            <br>
+            <div id="agree" style="display: none;">
+            <button id="yes" class="btn btn-success" onclick="yes()"> Yes</button>
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            <button id="no" class="btn btn-danger" onclick="no()">No</button>
+            </div>
+        </center>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
